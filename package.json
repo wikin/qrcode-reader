@@ -7,8 +7,8 @@
   "scripts": {
     "build": "npm-run-all --parallel css js",
     "css": "npm-run-all --parallel css-compile* --sequential css-prefix*",
-    "css-compile": "node-sass --output-style compressed --output assets/  src/scss/ --source-map true",
-    "css-prefix": "postcss  --config postcss.config.js --replace \"assets/*.css\"",
+    "css-compile": "node-sass --output-style compressed --output docs/  src/scss/ --source-map true",
+    "css-prefix": "postcss  --config postcss.config.js --replace \"docs/*.css\"",
     "watch-css": "nodemon --watch src -e scss -x \"npm run css\"",
     "watch-js": "webpack --watch",
     "js": "webpack",
